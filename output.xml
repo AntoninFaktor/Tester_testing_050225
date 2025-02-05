@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.0 on win32)" generated="2025-02-03T21:53:17.977196" rpa="false" schemaversion="5">
+<suite id="s1" name="App Site Test" source="C:\Users\Swoma\OneDrive\Desktop\Applifting\app_site_test\app_site_test.robot">
+<test id="s1-t1" name="Report Generation Test" line="5">
+<kw name="Load https://applifting.io" source_name="Load ${page}">
+<kw name="New Page" owner="Browser">
+<msg time="2025-02-03T21:53:18.128618" level="INFO">Starting Browser process C:\Users\Swoma\OneDrive\Desktop\Applifting\venv\Lib\site-packages\Browser\wrapper\index.js using port 56370</msg>
+<msg time="2025-02-03T21:53:18.128721" level="INFO">Node startup parameters: ['node', 'C:\\Users\\Swoma\\OneDrive\\Desktop\\Applifting\\venv\\Lib\\site-packages\\Browser\\wrapper\\index.js', '56370']</msg>
+<msg time="2025-02-03T21:53:19.719613" level="INFO">Successfully initialized new page object and opened url: https://applifting.io</msg>
+<msg time="2025-02-03T21:53:19.719672" level="INFO">No browser and context was open. New browser and context was automatically opened when page is created.</msg>
+<arg>${page}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-02-03T21:53:18.107425" elapsed="1.612358"/>
+</kw>
+<status status="PASS" start="2025-02-03T21:53:18.106881" elapsed="1.613027"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:19.721173" level="INFO">Clicks the element '"Get our new ebook"'.</msg>
+<arg>"Get our new ebook"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:19.720156" elapsed="0.089942"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>button &gt;&gt; "Get the ebook"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-03T21:53:19.810449" elapsed="0.868402"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<msg time="2025-02-03T21:53:20.683239" level="INFO">Did Go Back</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="PASS" start="2025-02-03T21:53:20.679137" elapsed="0.004195"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:20.684317" level="INFO">Clicks the element '"GET IN TOUCH"'.</msg>
+<arg>"GET IN TOUCH"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:20.683520" elapsed="3.344059"/>
+</kw>
+<kw name="Scroll To Element" owner="Browser">
+<arg>//div[text()="CEO UK"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-03T21:53:24.027850" elapsed="0.034747"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:24.063840" level="INFO">Clicks the element '//div[text()="CEO CZ"]'.</msg>
+<arg>//div[text()="CEO CZ"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:24.062880" elapsed="0.040025"/>
+</kw>
+<kw name="Go Back" owner="Browser">
+<msg time="2025-02-03T21:53:24.107592" level="INFO">Did Go Back</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Navigates to the previous page in history.</doc>
+<status status="PASS" start="2025-02-03T21:53:24.103178" elapsed="0.004519"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:24.108749" level="INFO">Clicks the element '"See all"'.</msg>
+<arg>"See all"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:24.107903" elapsed="0.973463"/>
+</kw>
+<msg time="2025-02-03T21:53:25.083970" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-02-03T21:53:25.091252" level="INFO">Switching context to context=fbe84c37-07ba-439f-9398-c549ac91aaf5 in CURRENT</msg>
+<msg time="2025-02-03T21:53:25.094913" level="INFO">Successfully changed active context: context=fbe84c37-07ba-439f-9398-c549ac91aaf5</msg>
+<msg time="2025-02-03T21:53:25.101042" level="INFO">Successfully closed Context</msg>
+<tag>applifting_report</tag>
+<status status="PASS" start="2025-02-03T21:53:18.106364" elapsed="6.975390"/>
+</test>
+<test id="s1-t2" name="Is There Coffee Test" line="17">
+<kw name="Load https://applifting.io" source_name="Load ${page}">
+<kw name="New Page" owner="Browser">
+<msg time="2025-02-03T21:53:25.682161" level="INFO">Successfully initialized new page object and opened url: https://applifting.io</msg>
+<msg time="2025-02-03T21:53:25.682226" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${page}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-02-03T21:53:25.104027" elapsed="0.578345"/>
+</kw>
+<status status="PASS" start="2025-02-03T21:53:25.103654" elapsed="0.578822"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:25.683766" level="INFO">Clicks the element 'a &gt;&gt; span &gt;&gt; "Careers"'.</msg>
+<arg>a &gt;&gt; span &gt;&gt; "Careers"</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:25.682691" elapsed="0.069383"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-02-03T21:53:25.753277" level="INFO">Clicks the element '//h2[text()="Quality Assurance Engineer (Prague)"]'.</msg>
+<arg>//h2[text()="Quality Assurance Engineer (Prague)"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-02-03T21:53:25.752362" elapsed="0.231780"/>
+</kw>
+<kw name="Look for coffee" source_name="Look for ${item}">
+<kw name="Scroll To Element" owner="Browser">
+<arg>text=${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2025-02-03T21:53:25.984776" elapsed="0.144247"/>
+</kw>
+<kw name="Highlight Elements" owner="Browser">
+<msg time="2025-02-03T21:53:26.136963" level="INFO">Highlighted 1 elements for 5000.</msg>
+<arg>text=${item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Adds a highlight to elements matched by the ``selector``. Provides a style adjustment.</doc>
+<status status="PASS" start="2025-02-03T21:53:26.129172" elapsed="0.007887"/>
+</kw>
+<status status="PASS" start="2025-02-03T21:53:25.984439" elapsed="0.152711"/>
+</kw>
+<kw name="Take Screenshot" owner="Browser">
+<msg time="2025-02-03T21:53:26.218716" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="browser/screenshot/robotframework-browser-screenshot-1.png" target="_blank"&gt;&lt;img src="browser/screenshot/robotframework-browser-screenshot-1.png" width="800px"/&gt;&lt;/a&gt;</msg>
+<tag>PageContent</tag>
+<doc>Takes a screenshot of the current window or element and saves it to disk.</doc>
+<status status="PASS" start="2025-02-03T21:53:26.137369" elapsed="0.081467"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-02-03T21:53:26.219321" level="INFO">Coffee found!</msg>
+<arg>Coffee found!</arg>
+<arg>INFO</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-02-03T21:53:26.219093" elapsed="0.000271"/>
+</kw>
+<msg time="2025-02-03T21:53:26.221044" level="INFO">Set timeout to: 10000</msg>
+<msg time="2025-02-03T21:53:26.245912" level="INFO">Switching context to context=b65f233b-0b88-4746-bc8f-21e6ba74530e in CURRENT</msg>
+<msg time="2025-02-03T21:53:26.249696" level="INFO">Successfully changed active context: context=b65f233b-0b88-4746-bc8f-21e6ba74530e</msg>
+<msg time="2025-02-03T21:53:26.252857" level="INFO">Successfully closed Context</msg>
+<tag>coffee_test</tag>
+<status status="PASS" start="2025-02-03T21:53:25.101651" elapsed="1.117915"/>
+</test>
+<status status="PASS" start="2025-02-03T21:53:17.978457" elapsed="8.275108"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">applifting_report</stat>
+<stat pass="1" fail="0" skip="0">coffee_test</stat>
+</tag>
+<suite>
+<stat name="App Site Test" id="s1" pass="2" fail="0" skip="0">App Site Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
