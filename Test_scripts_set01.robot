@@ -30,15 +30,15 @@ Forbidden Char Cart Update Test
     [Documentation]    Test the 404 page.
     [Tags]    unhappy    critical
     Load page
-    Search list @{search_list}
+    Go to     ${domain}/i-do-not-exist
+    Varify 404 Page
 
 Search Non-existent Item Test
     [Documentation]    Test searching for a non-existent item.
     [Tags]    unhappy    search    
     Load page
-    Go to     ${domain}/i-do-not-exist
-    Varify 404 Page
-
+    Search list @{non_existent_item}
+    
 Cart Accessibility Test
     [Documentation]    Test the accessibility of the cart from various pages.
     [Tags]    happy    cart    
